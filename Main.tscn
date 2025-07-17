@@ -5,3 +5,4 @@
 [node name="Main" type="Node2D"]
 
 [node name="UpgradeTemplate" parent="." instance=ExtResource("1_glv2v")]
+script = null

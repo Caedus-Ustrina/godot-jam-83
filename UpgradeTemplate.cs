@@ -3,11 +3,8 @@ using Godot.Collections;
 using System;
 
 [Tool]
-public partial class UpgradeTemplate : Control
+public abstract partial class UpgradeTemplate : Control
 {
-    [Export]
-    public Array<Button> UpgradeButtons { get; set; } = new Array<Button>();
-
 
     private HBoxContainer _outerContainer;
 
@@ -20,10 +17,10 @@ public partial class UpgradeTemplate : Control
         // Call base proccess to avoid missing functionality
         base._Process(delta);
 
-        // Keep the editor up to date with button changes
-        if(Engine.IsEditorHint())
+        //Keep engine up to date in editor
+        if (Engine.IsEditorHint())
         {
-            this.AddButtons();
+            AttachReferences();
         }
     }
 
@@ -32,10 +29,8 @@ public partial class UpgradeTemplate : Control
         // Call base ready to avoid missing functionality
         base._Ready();
 
-        if(this.AttachReferences() && this.UpgradeButtons.Count > 0)
-        {
-            this.AddButtons();
-        }
+        // Attach references to children
+        AttachReferences();
     }
 
     private bool AttachReferences()
@@ -60,17 +55,6 @@ public partial class UpgradeTemplate : Control
             GD.PrintErr(e.Message);
 
             return false;
-        }
-    }
-
-    private void AddButtons()
-    {
-        if (this.UpgradeButtons.Count > 0)
-        {
-            foreach (Button button in this.UpgradeButtons)
-            {
-                this._buttonContainer.AddChild(button);
-            }
         }
     }
 }
