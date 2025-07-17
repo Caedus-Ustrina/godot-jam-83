@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bccnbdjhs7pkd"]
+
+[ext_resource type="PackedScene" uid="uid://blj4uyw5vy315" path="res://upgrade_template.tscn" id="1_glv2v"]
+
+[node name="Main" type="Node2D"]
+
+[node name="UpgradeTemplate" parent="." instance=ExtResource("1_glv2v")]
