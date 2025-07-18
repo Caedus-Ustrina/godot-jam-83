@@ -1,0 +1,59 @@
+[gd_scene load_steps=2 format=3 uid="uid://cfs6i4g112ea3"]
+
+[ext_resource type="FontFile" uid="uid://d0jde0vq2oiyr" path="res://fonts/Xolonium-Regular.ttf" id="1_pkupl"]
+
+[node name="TitleScreen" type="CanvasLayer"]
+
+[node name="TitleLabel" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -251.0
+offset_top = 125.0
+offset_right = 251.0
+offset_bottom = 245.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("1_pkupl")
+theme_override_font_sizes/font_size = 100
+text = "Plantarus"
+
+[node name="TitleOptionsGrid" type="GridContainer" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -73.0
+offset_top = -284.0
+offset_right = 73.0
+offset_bottom = -76.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="StartLabel" type="Label" parent="TitleOptionsGrid"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_fonts/font = ExtResource("1_pkupl")
+theme_override_font_sizes/font_size = 52
+text = "Start"
+
+[node name="OptionsLabel" type="Label" parent="TitleOptionsGrid"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_fonts/font = ExtResource("1_pkupl")
+theme_override_font_sizes/font_size = 36
+text = "Options"
+
+[node name="CreditsLabel" type="Label" parent="TitleOptionsGrid"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_fonts/font = ExtResource("1_pkupl")
+theme_override_font_sizes/font_size = 36
+text = "Credits"
+
+[node name="ExitLabel" type="Label" parent="TitleOptionsGrid"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_fonts/font = ExtResource("1_pkupl")
+theme_override_font_sizes/font_size = 36
+text = "Exit"
