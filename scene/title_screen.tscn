@@ -1,8 +1,21 @@
-[gd_scene load_steps=2 format=3 uid="uid://cfs6i4g112ea3"]
+[gd_scene load_steps=6 format=3 uid="uid://cfs6i4g112ea3"]
 
 [ext_resource type="FontFile" uid="uid://d0jde0vq2oiyr" path="res://fonts/Xolonium-Regular.ttf" id="1_pkupl"]
+[ext_resource type="Texture2D" uid="uid://bujt1nw42ny6r" path="res://Art/twee.png" id="2_j6oad"]
+[ext_resource type="Texture2D" uid="uid://c4j78251870k7" path="res://Art/zomboni.png" id="3_ulgj7"]
+[ext_resource type="Texture2D" uid="uid://5wlq71h80yjk" path="res://Art/flowy.png" id="4_gh7ws"]
+[ext_resource type="Texture2D" uid="uid://bng36ajsiijcu" path="res://Art/bee.png" id="5_t18hh"]
 
 [node name="TitleScreen" type="CanvasLayer"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+metadata/_edit_lock_ = true
 
 [node name="TitleLabel" type="Label" parent="."]
 anchors_preset = 5
@@ -57,3 +70,77 @@ size_flags_horizontal = 0
 theme_override_fonts/font = ExtResource("1_pkupl")
 theme_override_font_sizes/font_size = 36
 text = "Exit"
+
+[node name="TitleTwee" type="TextureRect" parent="."]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 73.0
+offset_top = 56.0
+offset_right = 393.0
+offset_bottom = 236.0
+grow_vertical = 2
+texture = ExtResource("2_j6oad")
+
+[node name="TitleZomboni" type="TextureRect" parent="."]
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -384.0
+offset_top = 163.0
+offset_right = -344.0
+offset_bottom = 227.0
+grow_horizontal = 0
+grow_vertical = 2
+texture = ExtResource("3_ulgj7")
+
+[node name="TitleZomboni2" type="TextureRect" parent="."]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -136.0
+offset_top = -161.0
+offset_right = -96.0
+offset_bottom = -97.0
+grow_horizontal = 0
+grow_vertical = 0
+texture = ExtResource("3_ulgj7")
+
+[node name="TitleFlowy" type="TextureRect" parent="."]
+offset_left = 934.0
+offset_top = 513.0
+offset_right = 974.0
+offset_bottom = 553.0
+texture = ExtResource("4_gh7ws")
+
+[node name="TitleFlowy2" type="TextureRect" parent="."]
+offset_left = 862.0
+offset_top = 473.0
+offset_right = 902.0
+offset_bottom = 513.0
+texture = ExtResource("4_gh7ws")
+
+[node name="TitleBee" type="TextureRect" parent="."]
+offset_left = 1050.0
+offset_top = 391.0
+offset_right = 1090.0
+offset_bottom = 431.0
+texture = ExtResource("5_t18hh")
+
+[node name="TitleBee2" type="TextureRect" parent="."]
+offset_left = 932.0
+offset_top = 423.0
+offset_right = 972.0
+offset_bottom = 463.0
+texture = ExtResource("5_t18hh")
+
+[node name="TitleBee3" type="TextureRect" parent="."]
+offset_left = 790.0
+offset_top = 401.0
+offset_right = 830.0
+offset_bottom = 441.0
+texture = ExtResource("5_t18hh")
