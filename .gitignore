@@ -1,3 +1,9 @@
 # Godot 4+ specific ignores
 .godot/
 /android/
+
+# Visual Studio ignores
+.vs/
+
+# Implementation specific ignores
+addons/
