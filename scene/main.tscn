@@ -30,3 +30,9 @@ position = Vector2(0, 651)
 shape = SubResource("WorldBoundaryShape2D_0ha60")
 
 [node name="Enemy" type="Node2D" parent="."]
+
+[node name="UpgradePanels" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
