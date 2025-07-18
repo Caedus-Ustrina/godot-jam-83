@@ -31,17 +31,17 @@ theme_override_font_sizes/font_size = 100
 text = "Plantarus"
 
 [node name="TitleOptionsGrid" type="GridContainer" parent="."]
-anchors_preset = 7
+anchors_preset = 8
 anchor_left = 0.5
-anchor_top = 1.0
+anchor_top = 0.5
 anchor_right = 0.5
-anchor_bottom = 1.0
+anchor_bottom = 0.5
 offset_left = -73.0
-offset_top = -284.0
+offset_top = 31.0
 offset_right = 73.0
-offset_bottom = -76.0
+offset_bottom = 239.0
 grow_horizontal = 2
-grow_vertical = 0
+grow_vertical = 2
 
 [node name="StartLabel" type="Label" parent="TitleOptionsGrid"]
 layout_mode = 2
@@ -75,10 +75,10 @@ text = "Exit"
 anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
-offset_left = 73.0
-offset_top = 56.0
-offset_right = 393.0
-offset_bottom = 236.0
+offset_left = 118.0
+offset_top = 63.0
+offset_right = 438.0
+offset_bottom = 243.0
 grow_vertical = 2
 texture = ExtResource("2_j6oad")
 
@@ -88,10 +88,10 @@ anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = -384.0
-offset_top = 163.0
-offset_right = -344.0
-offset_bottom = 227.0
+offset_left = -433.0
+offset_top = 171.0
+offset_right = -393.0
+offset_bottom = 235.0
 grow_horizontal = 0
 grow_vertical = 2
 texture = ExtResource("3_ulgj7")
@@ -102,45 +102,45 @@ anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -136.0
-offset_top = -161.0
-offset_right = -96.0
-offset_bottom = -97.0
+offset_left = -174.0
+offset_top = -189.0
+offset_right = -134.0
+offset_bottom = -125.0
 grow_horizontal = 0
 grow_vertical = 0
 texture = ExtResource("3_ulgj7")
 
 [node name="TitleFlowy" type="TextureRect" parent="."]
-offset_left = 934.0
-offset_top = 513.0
-offset_right = 974.0
-offset_bottom = 553.0
+offset_left = 1014.0
+offset_top = 554.0
+offset_right = 1054.0
+offset_bottom = 594.0
 texture = ExtResource("4_gh7ws")
 
 [node name="TitleFlowy2" type="TextureRect" parent="."]
-offset_left = 862.0
-offset_top = 473.0
-offset_right = 902.0
-offset_bottom = 513.0
+offset_left = 939.0
+offset_top = 520.0
+offset_right = 979.0
+offset_bottom = 560.0
 texture = ExtResource("4_gh7ws")
 
 [node name="TitleBee" type="TextureRect" parent="."]
-offset_left = 1050.0
-offset_top = 391.0
-offset_right = 1090.0
-offset_bottom = 431.0
+offset_left = 1131.0
+offset_top = 428.0
+offset_right = 1171.0
+offset_bottom = 468.0
 texture = ExtResource("5_t18hh")
 
 [node name="TitleBee2" type="TextureRect" parent="."]
-offset_left = 932.0
-offset_top = 423.0
-offset_right = 972.0
-offset_bottom = 463.0
+offset_left = 1010.0
+offset_top = 460.0
+offset_right = 1050.0
+offset_bottom = 500.0
 texture = ExtResource("5_t18hh")
 
 [node name="TitleBee3" type="TextureRect" parent="."]
-offset_left = 790.0
-offset_top = 401.0
-offset_right = 830.0
-offset_bottom = 441.0
+offset_left = 885.0
+offset_top = 430.0
+offset_right = 925.0
+offset_bottom = 470.0
 texture = ExtResource("5_t18hh")
