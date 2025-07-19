@@ -7,3 +7,7 @@
 
 # Implementation specific ignores
 addons/
+
+# SolutionIgnore
+GodotWildJam83.csproj
+GodotWildJam83.sln
